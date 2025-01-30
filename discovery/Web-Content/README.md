@@ -1,55 +1,53 @@
-# Web discovery wordlists
+# Списки слов для веб-сканирования
 
 ## AdobeCQ-AEM.txt
-Use for: Discovering sensitive filepaths of **Adobe Experience Manager**
-Creation date: Oct 1, 2017
-No updates have been made to this wordlist since its creation.
+Используется для: обнаружения чувствительных путей файлов в **Adobe Experience Manager**  
+Дата создания: 1 октября 2017 года  
+С момента создания этот список не обновлялся.
 
 ## AdobeXML.fuzz.txt
-Use for: Discovering sensitive filepaths of **Adobe ColdFusion**
-Creation date: Aug 27, 2012
-No updates have been made to this wordlist since its creation.
+Используется для: обнаружения чувствительных путей файлов в **Adobe ColdFusion**  
+Дата создания: 27 августа 2012 года  
+С момента создания этот список не обновлялся.
 
 ## Apache.fuzz.txt
-Use for: Discvering sensitive content in Apache web servers.
-Date of last update: Jan 26, 2015
+Используется для: обнаружения конфиденциального содержимого на веб-серверах Apache.  
+Дата последнего обновления: 26 января 2015 года
 
 ## ApacheTomcat.fuzz.txt
-Use for: Discovering sensitive content in Apache Tomcat servers.
-Date of last update: Dec 14, 2017
+Используется для: обнаружения конфиденциального содержимого на серверах Apache Tomcat.  
+Дата последнего обновления: 14 декабря 2017 года
 
 ## CGI-HTTP-POST-Windows.fuzz.txt
-Use for: Exploiting various vulnerabilities in the now defunct WYSIWYG HTML editor and website administration tool, [Microsoft FrontPage](https://en.wikipedia.org/wiki/Microsoft_FrontPage)
-Source: https://github.com/deepak0401/Front-Page-Exploit
-Date of last update: Aug 27, 2012
-The last version of FrontPage was released on 2003.
+Используется для: эксплуатации различных уязвимостей в устаревшем WYSIWYG HTML-редакторе и инструменте администрирования сайтов, [Microsoft FrontPage](https://en.wikipedia.org/wiki/Microsoft_FrontPage)  
+Источник: https://github.com/deepak0401/Front-Page-Exploit  
+Дата последнего обновления: 27 августа 2012 года  
+Последняя версия FrontPage была выпущена в 2003 году.
 
 ## CGI-HTTP-POST.fuzz.txt
-Use for: Exploiting/Discovering various vulnerabilities in extremely old systems (Circa 1998) that use "CGI". 
-Date of last update: Aug 27, 2012
+Используется для: эксплуатации/обнаружения различных уязвимостей в крайне старых системах (около 1998 года), использующих "CGI".  
+Дата последнего обновления: 27 августа 2012 года  
 
-This wordlist tests for the following vulnerabilities:
-- Default password in the [Nortel Meridian](https://en.wikipedia.org/wiki/Nortel_Meridian) private branch exchange **telephone switching system**. Source: [Nikto](https://github.com/sullo/nikto/blob/07653b73cb711972df72a8c66191468705a9b14e/program/databases/db_tests#L1167).
-- XSS in the **"Bajie HTTP JServer"** (software site completely defunct, no archives exist). Source: [Nikto](https://github.com/sullo/nikto/blob/07653b73cb711972df72a8c66191468705a9b14e/program/databases/db_tests#L803)
-- CGI Vulnerability in an unknown system (payload `lastlines.cgi?process`) which would allow attackers to "read arbitrary files and/or execute commands". Source: [Nikto](https://github.com/sullo/nikto/blob/07653b73cb711972df72a8c66191468705a9b14e/program/databases/db_tests#L1036)
-- Remote File Include in **[myPHPNuke](https://web.archive.org/web/20140812223623/http://www.myphpnuke.com/)**. Source: [Nessus](https://www.tenable.com/plugins/nessus/11836)
-- DoS in the **"D-Link Ethernet/Fast Ethernet Print Server DP-300+"**. Source: [Sullo's Security Advisory Archive](https://raw.githubusercontent.com/sullo/advisory-archives/master/phenoelit.de_dp-300.txt).
+Этот список тестирует следующие уязвимости:
+- Уязвимость с использованием пароля по умолчанию в системе телефонной коммутации **[Nortel Meridian](https://en.wikipedia.org/wiki/Nortel_Meridian)**. Источник: [Nikto](https://github.com/sullo/nikto/blob/07653b73cb711972df72a8c66191468705a9b14e/program/databases/db_tests#L1167).  
+- XSS уязвимость в **"Bajie HTTP JServer"** (сайт программного обеспечения полностью закрыт, архивов нет). Источник: [Nikto](https://github.com/sullo/nikto/blob/07653b73cb711972df72a8c66191468705a9b14e/program/databases/db_tests#L803).  
+- Уязвимость CGI в неизвестной системе (payload `lastlines.cgi?process`), позволяющая злоумышленникам "читать произвольные файлы и/или выполнять команды". Источник: [Nikto](https://github.com/sullo/nikto/blob/07653b73cb711972df72a8c66191468705a9b14e/program/databases/db_tests#L1036).  
+- Удаленное включение файлов (**Remote File Include**) в **[myPHPNuke](https://web.archive.org/web/20140812223623/http://www.myphpnuke.com/)**. Источник: [Nessus](https://www.tenable.com/plugins/nessus/11836).   
+- DoS атака на **"D-Link Ethernet/Fast Ethernet Print Server DP-300+"**. Источник: [Архив советов по безопасности от Sullo](https://raw.githubusercontent.com/sullo/advisory-archives/master/phenoelit.de_dp-300.txt).
 
 ## CGI-Microsoft.fuzz.txt
-Use for: Exploiting/Discovering various vulnerabilities in miscelaneous CGI scripts that run on Microsoft operating systems.
-Date of last update: Aug 27, 2012
+Используется для: эксплуатации или обнаружения различных уязвимостей в скриптах CGI, работающих на операционных системах Microsoft.  
+Дата последнего обновления: 27 августа 2012 года  
 
 ## raft-* wordlists
-Use for: Directory and file brute-forcing leading to identification of vulnerabilities in web applications.
-Source: [Google's RAFT](https://code.google.com/archive/p/raft/)
+Используются для брутфорсинга директорий и файлов с целью выявления уязвимостей веб-приложений.   
+Источник: [Google's RAFT](https://code.google.com/archive/p/raft/)  
 
 ## combined_words.txt
+Используется для поиска файлов    
+Этот список автоматически обновляется через GitHub Action всякий раз, когда любой из списков, из которых он состоит, изменяется.
 
-Use for: discovering files    
-This list is automatically updated by a github action whenever any of the lists it's composed by is modified.
-
-This list is a combination of the following wordlists:
-
+Данный список является комбинацией следующих списков слов:
 - big.txt
 - common.txt
 - raft-large-words-lowercase.txt
@@ -59,47 +57,39 @@ This list is a combination of the following wordlists:
 - raft-small-words-lowercase.txt
 - raft-small-words.txt
 
-
 ## combined_directories.txt
 
-Use for: discovering files and directories    
-This list is automatically updated by a github action whenever any of the lists it's composed by is modified.
+Используется для поиска файлов и директорий    
+Этот список автоматически обновляется через GitHub Action всякий раз, когда любой из списков, из которых он состоит, изменяется.
 
-This list is a combination of the following wordlists:
-- apache.txt
-- combined_words.txt
-- directory-list-1.0.txt
-- directory-list-2.3-big.txt
-- directory-list-2.3-medium.txt
-- directory-list-2.3-small.txt
-- raft-large-directories-lowercase.txt
-- raft-large-directories.txt
-- raft-medium-directories-lowercase.txt
-- raft-medium-directories.txt
-- raft-small-directories-lowercase.txt
-- raft-small-directories.txt
-- common_directories.txt
+Данный список является комбинацией следующих списков слов:
+ - apache.txt 
+ - combined_words.txt 
+ - directory-list-*.*.* и других 
 
-### Usage
-Use for: discovering files and directories
+### Использование:
+Для поиска файлов и директорий  
 
-### Source
-This list is automatically updated by a GitHub action whenever any of the lists it's composed by is modified.
+### Источник:
+Автоматически поддерживается через GitHub Action.
 
+---
 
 ## dsstorewordlist.txt
 
-SOURCE: https://github.com/aels/subdirectories-discover
+ИСТОЧНИК : https://github.com/aels/subdirectories-discover 
 
-Perfect wordlist to discover directories and files on target site with tools like ffuf.
-- It was collected by parsing Alexa top-million sites for **.DS_Store** files (https://en.wikipedia.org/wiki/.DS_Store), extracting all the found files, and then extracting found file and directory names from around 300k real websites.
-- Then sorted by probability and removed strings with one occurrence.
-- resulted file you can download is below. Happy Hunting!
+Описание:
+
+Идеальный список слов для поиска каталогов и файлов на целевом сайте с помощью таких инструментов, как ffuf.
+- Данные были получены путем анализа сайтов Alexa, входящих в топ-миллион, на предмет наличия файлов **.DS_Store** (https://en.wikipedia.org/wiki/.DS_Store), извлечения всех найденных файлов, а затем извлечения названий найденных файлов и каталогов примерно с 300 тысяч реальных веб-сайтов.
+- Затем отсортировал по вероятности и удалил строки с одним совпадением.
+- полученный файл, который вы можете скачать, приведен ниже. Удачной охоты!
 
 ## vulnerability-scan_j2ee-websites_WEB-INF.txt
-Use for: discovering sensitive j2ee files exploiting a lfi
+Используется для: обнаружения конфиденциальных файлов j2ee, использующих lfi
 
-References: 
+Рекомендации: 
     
 - https://gist.github.com/harisec/519dc6b45c6b594908c37d9ac19edbc3
 - https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/generic/generic-j2ee-lfi.yaml
@@ -107,36 +97,36 @@ References:
 
 
 ## Frontpage.fuzz.txt
-Use for: Fuzzing for common filepaths in webpages designed with **[Microsoft Frontpage](https://en.wikipedia.org/wiki/Microsoft_FrontPage)**
+Используется для: Поиска общих путей к файлам на веб-страницах, созданных с помощью **[Microsoft Frontpage](https://en.wikipedia.org/wiki/Microsoft_FrontPage)**
 
-Year of the first release of Microsoft Frontpage: 1997
-Year of the last release of Microsoft Frontpage: 2003
+Год первого выпуска Microsoft Frontpage: 1997
+Год последнего выпуска Microsoft Frontpage: 2003
 
-Date of last update: Oct 14, 2010
+Дата последнего обновления: 14 октября 2010
 
 
 ## Web-Server-Java-Servlet-Runner-Adobe-JRun
-Use for: Fuzzing for common filepaths in webpages served with **[Java Servlet Runner (Adobe JRun)](https://adobe.fandom.com/wiki/JRun)**
+Используется для: Поиска общих путей к файлам на веб-страницах, обслуживаемых с помощью **[Java Servlet Runner (Adobe JRun)](https://adobe.fandom.com/wiki/JRun)**
 
-Year of the first release of Java Servlet Runner (Adobe JRun): 1997
-Year of the last release of Java Servlet Runner (Adobe JRun): 2007
+Год первого выпуска Java Servlet Runner (Adobe JRun): 1997
+Год последнего выпуска Java Servlet Runner (Adobe JRun): 2007
 
-Date of last update: Oct 14, 2010
+Дата последнего обновления: 14 октября 2010
 
 
 ## Web-Server-Oracle-Sun-iPlanet.txt
-Use for: Fuzzing for common filepaths in webpages served with **[Oracle Sun iPlanet](https://www.oracle.com/middleware/technologies/webtier.html)**
+Используется для: Поиска общих путей к файлам на веб-страницах, обслуживаемых с помощью **[Oracle Sun iPlanet](https://www.oracle.com/middleware/technologies/webtier.html)**
 
-Year of the first release of Sun-iPlanet (Adobe JRun): 1994
-Year of the last release of Sun-iPlanet (Adobe JRun): 2017
+Год первого выпуска Sun-iPlanet (Adobe JRun): 1994
+Год последнего выпуска Sun-iPlanet (Adobe JRun): 2017
 
-Date of last update: Oct 14, 2010
+Дата последнего обновления: 14 октября 2010
 
 
 ## Web-Server-Glassfish-Sun-Microsystems.txt
-Use for: Fuzzing for common filepaths in webpages served with **[Glassfish - Sun Microsystems](https://glassfish.org/)**
+Используется для: Поиска общих путей к файлам на веб-страницах, обслуживаемых с помощью **[Glassfish - Sun Microsystems](https://glassfish.org/)**
 
-Year of the first release of Glassfish: [2005](https://en.wikipedia.org/wiki/GlassFish)
-Glassfish is still in recieving updates as of 2024.
+Год первого выпуска Glassfish: [2005](https://en.wikipedia.org/wiki/GlassFish)
+С 2024 года Glassfish продолжает получать обновления.
 
-Date of last update: Oct 14, 2010
+Дата последнего обновления: 14 октября 2010

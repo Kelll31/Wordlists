@@ -1,11 +1,11 @@
-# XSS Human-Friendly version
+# Версия XSS для пользователей
 
-This directory contains XSS you can test for. For usage in tools, go to the [robot-friendly](../robot-friendly) directory.
+В этом каталоге содержится XSS, который вы можете протестировать. Для использования в инструментах перейдите в каталог [robot-friendly](../robot-friendly).
 
-There are some line you may need to change/take note in order for your testing process to go smoothly. (e.g. third party resources that may get flagged by WAF and the xss itself) 
+Есть некоторые строки, которые вам, возможно, потребуется изменить / принять к сведению, чтобы процесс тестирования прошел гладко. (например, сторонние ресурсы, которые могут быть помечены WAF и самим xss) 
 
-Some XSS trigger condition may require you to interact with the web pages to trigger it. You should read through all the wordlists here and understand what each XSS does, then customizing it to your own needs.
+Для запуска некоторых условий запуска XSS может потребоваться взаимодействие с веб-страницами. Вам следует ознакомиться со всеми приведенными здесь списками слов и понять, что делает каждый XSS, а затем настроить его в соответствии со своими потребностями.
 
-To see the results, look out for message popups or network activity in the devtools of your browser.
+Чтобы увидеть результаты, обратите внимание на всплывающие сообщения или сетевую активность в инструментах разработки вашего браузера.
 
-Happy hacking!
+Удачного взлома!

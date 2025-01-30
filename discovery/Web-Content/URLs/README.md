@@ -1,1 +1,1 @@
-The URLs directory will hold numerous lists of URLs for common systems that one may attack, e.g. WordPress, Drupal, etc. These lists can be passed through an intercepting proxy in order to populate a site tree with whitebox-like knowledge.
+Каталог URLs будет содержать многочисленные списки URL-адресов для распространенных систем, которые можно атаковать, например, WordPress, Drupal и т.д. Эти списки могут быть переданы через прокси-сервер для перехвата, чтобы заполнить дерево сайта информацией, подобной whitebox.

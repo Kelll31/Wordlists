@@ -1,6 +1,6 @@
 ## directory-traversal.zip
 
-This zip file containes files with filenames for directory traversal:
+Этот zip-файл содержит файлы с именами файлов для обхода каталогов:
 
 - `..::..::;`
 - `..::;`
@@ -20,16 +20,16 @@ This zip file containes files with filenames for directory traversal:
 - `;:`
 - `;\:`
 
-> It's impossible to unzip this file on Windows, due to their arbitrary filename restrictions. It's possible to unzip it in WSL though.
+> Этот файл невозможно распаковать в Windows из-за ограничений на произвольное имя файла. Однако, его можно распаковать в WSL.
 
 
 ## max-length.zip
 
-This zip file containes files with long filenames for testing buffer overflow vulnerabilities, or error-based access control vulnerabilities. This zip also includes a script to generate arbitrarily long filenames.
+Этот zip-файл содержит файлы с длинными именами файлов для тестирования уязвимостей, связанных с переполнением буфера или управлением доступом на основе ошибок. Этот zip-файл также содержит скрипт для генерации произвольно длинных имен файлов.
 
 
 - `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.php.gif`
 - `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`
 - `make-255.sh`
 
-> It's impossible to unzip this file on Windows, due to their arbitrary filename restrictions. It's possible to unzip it in WSL though.
+> Этот файл невозможно распаковать в Windows из-за ограничений на произвольное имя файла. Однако, его можно распаковать в WSL.

@@ -1,1 +1,1 @@
-This directory will contain list information that will be helpful in attacking both SOAP and REST-based web services.
+Этот каталог будет содержать список сведений, которые будут полезны при атаке как на SOAP, так и на REST-веб-сервисы.

@@ -1,9 +1,9 @@
 # Pwdb-Public
 
-Pwdb-Public contains lists imported directly from [ignis-sec/Pwdb-Public](https://github.com/ignis-sec/Pwdb-Public/).
+Pwdb-Public содержит списки, импортированные непосредственно из [ignis-sec/Pwdb-Public](https://github.com/ignis-sec/Pwdb-Public/).
 
-[Wordlists/Language-Specifics](Wordlists/Language-Specifics/) contains passwords unique to a specific language like hindi and german.
+[Списки слов/Языковые особенности] (Wordlists/Language-Specifics/) содержит пароли, уникальные для определенного языка, такого как хинди и немецкий.
 
-[Wordlists/Frequent-Passwords/](Wordlists/Frequent-Passwords/) contains pipe (`|`) separated entries of passwords and frequency, grouped by amount.
+[Списки слов/Часто используемые пароли/](Wordlists/Frequent-Passwords/) содержит разделенные столбцом (`|`) записи паролей и частоты, сгруппированные по количеству.
 
-[Wordlists/](Wordlists/) `*.txt` contains passwords that has been sorted by descending frequency and grouped by amount.
+[Списки слов/](Wordlists/) `*.txt` содержит пароли, которые были отсортированы по убыванию частоты и сгруппированы по количеству.

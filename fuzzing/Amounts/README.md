@@ -1,9 +1,9 @@
-# Amounts
+# Суммы
 
-Pre-generated wordlists based on [Common Security Issues in Financially-Oriented Web Applications](https://research.nccgroup.com/wp-content/uploads/2020/07/common_security_issues_in_financially-orientated_web.pdf) PDF.
+Предварительно сгенерированные списки слов на основе [Распространенных проблем безопасности в финансово-ориентированном Вебе Applications](https://research.nccgroup.com/wp-content/uploads/2020/07/common_security_issues_in_financially-orientated_web.pdf) PDF.
 
-Created to fuzz amounts, quantities, or any other numerical values.
+Созданы для изменения сумм, количеств или любых других числовых значений.
 
-Bypass minimum and maximum restrictions, cause unintended behavior and errors, etc.
+Обходят минимальные и максимальные ограничения, вызывают непреднамеренное поведение и ошибки и т.д.
 
-Tool to create such wordlists can be found at [ivan-sincek/amounts](https://github.com/ivan-sincek/amounts). Feel free to create and add more wordlists on your own. Works with integer and float numerical values.
+Инструмент для создания таких списков слов можно найти по адресу [ivan-sincek/amounts](https://github.com/ivan-sincek/amounts). Не стесняйтесь создавать и добавлять другие списки слов самостоятельно. Работает с целыми числами и числами с плавающей точкой.

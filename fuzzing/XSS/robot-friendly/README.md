@@ -1,22 +1,22 @@
-# XSS Robot-Friendly version
+# Версия XSS для роботов
 
-This directory contains XSS you can test for. For human friendly versions, go to the [human-friendly](../human-friendly) directory.
+В этом каталоге содержится XSS, которую вы можете протестировать. Для версий, удобных для человека, перейдите в каталог [human-friendly](../human-friendly).
 
-There are some line you may need to change/take note in order for your testing process to go smoothly. (e.g. third party resources that may get flagged by WAF and the xss itself) 
+Есть некоторые строки, которые вам, возможно, потребуется изменить / принять к сведению, чтобы процесс тестирования прошел гладко. (например, сторонние ресурсы, которые могут быть помечены WAF и самим xss) 
 
-Some XSS trigger condition may require you to interact with the web pages to trigger it. You should read through all the wordlists here and understand what each XSS does, then customizing it to your own needs.
+Для запуска некоторых условий запуска XSS может потребоваться взаимодействие с веб-страницами. Вам следует ознакомиться со всеми приведенными здесь списками слов и понять, что делает каждый XSS, а затем настроить его в соответствии со своими потребностями.
 
-`XSS-Vectors-Mario.txt` and `XSS-With-Context-Jhaddix.txt` may not work as well as before because all XSS are squished into one line and may break some xss that relies on new lines.
+`XSS-Vectors-Mario.txt" и "XSS-With-Context-Jhaddix.txt" могут работать не так хорошо, как раньше, потому что все XS объединяются в одну строку и могут нарушать некоторые xss, которые зависят от новых строк.
 
-To see the results, look out for message popups or network activity in the devtools of your browser.
+Чтобы увидеть результаты, обратите внимание на всплывающие сообщения или сетевую активность в инструментах разработки вашего браузера.
 
-Happy hacking!
+Удачного взлома!
 
-## Removed xss
+## Удален xss
 
 ### XSS-EnDe-h4k.txt
 
-Removed because there was no way to squash it into one line
+Удален, потому что не было возможности втиснуть это в одну строку
 
 ```
 _
@@ -40,7 +40,7 @@ substr
 ```
 ### XSS-EnDe-xssAttacks.txt
 
-Also removed due to it's multiline nature
+Также удалено из-за его многострочного характера
 
 ```
 <IMG

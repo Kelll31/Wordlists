@@ -1,12 +1,12 @@
 ## fortinet-2021.txt
 
-`fortinet-2021.txt` contains:
+`fortinet-2021.txt` содержит:
 
-- A [mimikatz](https://github.com/gentilkiwi/mimikatz) dump: Search for `mimikatz` and `SRV_TRAX_LAZ\admin`
-- Active Directory LDAP dumps: Search for `cn=`
-- IP addresses: Search for `10.1.0.0/20`
-- Usernames in an unknown format that seem to be related to IP addresses: Search for lines that match the regex `^.*[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+`
-- Encrypted username:password combos: Search for `LUU9P1g5y758fJ1M:{N|3D9g:|zYQB$yH?DIfAvTnk_MrUz3Ge:![zF)~n;t:4Tw^X2-`
-- Poorly formatted username:password combinations: In some instances, there's single lines with several combos in the same line and no clear distinction as to where each combo begins and ends.
+- Дамп [mimikatz](https://github.com/gentilkiwi/mimikatz): Поиск `mimikatz` и `SRV_TRAX_LAZ\admin`
+- Дампы LDAP Active Directory: поиск `cn=`
+- IP-адреса: поиск по `10.1.0.0/20`
+- Имена пользователей в неизвестном формате, которые, по-видимому, связаны с IP-адресами: найдите строки, соответствующие регулярному выражению `^.*[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+`
+- Зашифрованные комбинации имени пользователя и пароля: Поиск `LUU9P1g5y758fJ1M: _BOS_N|3D9g:|zYQB$yH?ДИфАвТнк_МрУз3Ге:![zF)~n;t:4Tw^X2-`
+- Неправильно отформатированные комбинации имени пользователя и пароля: в некоторых случаях есть отдельные строки с несколькими комбинациями в одной строке, и нет четкого различия между началом и концом каждой комбинации.
 
-A cleaned-up version is available as `fortinet-2021_clean-combos.txt`. `fortinet-2021_clean-combos.txt` only contains the clearly distinguishable `username:password` lines.
+Обновленная версия доступна как `fortinet-2021_clean-combos.txt`. `fortinet-2021_clean-combos.txt" содержит только четко различимые строки `имя пользователя:пароль`.

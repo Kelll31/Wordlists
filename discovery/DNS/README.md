@@ -1,13 +1,13 @@
-## combined_subdomains
+## объединенные_субдомены
 
-This wordlist is a combination of the following wordlists with a few subdomains added:
+Этот список слов представляет собой комбинацию следующих списков слов с добавлением нескольких поддоменов:
 - bitquark-subdomains-top100000.txt
 - shubs-subdomains.txt
 - subdomains-top1million-110000.txt
 
-## `subdomains-top1million-*`
+## `поддомены-топ1миллион-*`
 
-> [!WARNING]
-> These wordlists are several years old, they were made in 2015. You will not be able to detect deployments of any services which were invented after 2015 using these wordlists, because their names will not be on the lists.
+> [!ВНИМАНИЕ!]
+> Этим спискам слов уже несколько лет, они были составлены в 2015 году. С помощью этих списков слов вы не сможете обнаружить развертывания каких-либо сервисов, которые были созданы после 2015 года, поскольку их названий не будет в списках.
 
-These wordlists were [zone-transfered from Amazon's Alexa.com](https://gist.github.com/ethicalhack3r/6145925) in 2015. They are lists of the most used subdomains at the time, as reported by Alexa.com.
+Эти списки слов были [перенесены в зоны с сайта Amazon Alexa.com](https://gist.github.com/ethicalhack3r/6145925) в 2015 году. Это списки наиболее часто используемых поддоменов на тот момент, о чем сообщает Alexa.com.

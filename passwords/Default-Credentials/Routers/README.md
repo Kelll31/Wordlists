@@ -1,11 +1,11 @@
-# Router default passwords and usernames
+# Пароли и имена пользователей маршрутизатора по умолчанию
 
-Always try using a blank username or a blank password, in combination with all the possible usernames / passwords.
+Всегда старайтесь использовать пустое имя пользователя или пустой пароль в сочетании со всеми возможными именами пользователей / паролями.
 
-Try using the full MAC address of the device as a password.
+Попробуйте использовать полный MAC-адрес устройства в качестве пароля.
 
-Try using the same password as that of the Wi-Fi.
+Попробуйте использовать тот же пароль, что и для Wi-Fi.
 
-If you have physical access to the router, look for any stickers with passwords on them: anything labeled `key`, `wireless key`, `WPA Key`, `password`, etc.
+Если у вас есть физический доступ к маршрутизатору, обратите внимание на наклейки с паролями: все, что обозначено как "ключ", "беспроводной ключ", "WPA-ключ", "пароль" и т.д.
 
-Try using the serial number found on bottom of the router as a password.
+Попробуйте использовать серийный номер, указанный в нижней части маршрутизатора, в качестве пароля.

@@ -1,8 +1,8 @@
 # XSS
-This is a directory for XSS wordlists. 
+Это каталог списков слов XSS. 
 
-They are for testing xss vulnerabilities manually or automatically using tools. The XSS wordlists are further split into two more categories, `human-friendly` and `robot-friendly`.
+Они предназначены для тестирования уязвимостей xss вручную или автоматически с помощью инструментов. Списки слов XSS также делятся еще на две категории: "удобные для человека" и "удобные для роботов`.
 
- The `human-friendly` category is for manual testings and as such, have comments left untouched. 
+ Категория "удобный для пользователя" предназначена для ручного тестирования, поэтому комментарии к ней оставляются без изменений. 
  
- The `robot-friendly` is for automated tools like ZAP or burpsuite to use. Minor changes may be required and as such, you should look out for the `README.md` file in each of the directories to know what to change.
+ Категория "удобный для робота" предназначена для использования автоматизированных инструментов, таких как ZAP или burpsuite. Могут потребоваться незначительные изменения, и поэтому вам следует обратить внимание на файл `README.md` в каждом из каталогов, чтобы знать, что нужно изменить.

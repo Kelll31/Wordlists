@@ -1,49 +1,49 @@
-# PHP magic hashes
+# Волшебные хэши PHP
 
-PHP has some unique features which makes hash "collisions" more easier when using the `==` to compare.
+В PHP есть несколько уникальных функций, которые упрощают "коллизию" хэшей при использовании `==` для сравнения.
 
-The raw text are taken directly from [spaze/hashes](https://github.com/spaze/hashes/)
-
-- - -
-
-### Floating comparison
-
-Any strings that starts with any numbers of `0`, followed by `e` then ends with only numbers will be treated as zero. An example of such strings are `0e123456` and `00e123456`. [Example code](https://3v4l.org/n8iOp)
-
-This behavior can be extended to numbers, like `'0' == '000'`. [Example code](https://3v4l.org/K9QRb)
-
-With loose comparison `==`, these two example strings will equate to each other as both of them are treated as a zero in the backend.
-
-Sometimes, hashes of specific strings will result in those special strings as an result. Those hashes are called `magic hashes`
-
-Here is an example of such weak comparison for [sha256](https://3v4l.org/Lu7tm).
+Исходный текст взят непосредственно из [spaze/hashes](https://github.com/spaze/hashes/)
 
 - - -
 
-### Plaintext
+### Плавающее сравнение
 
-Plaintext.txt just contains some ways to abuse php's weak comparison
+Любые строки, которые начинаются с любых цифр, начиная с "0", за которыми следует "e", и заканчиваются только цифрами, будут рассматриваться как нулевые. Примером таких строк являются "0e123456" и "00e123456`. [Пример кода](https://3v4l.org/n8iOp)
 
-- - -
+Это поведение может быть распространено на числа, например `0' == '000". [Пример кода](https://3v4l.org/K9QRb)
 
-### Truncated text
+При свободном сравнении `==` эти две строки в качестве примера будут приравниваться друг к другу, поскольку обе они обрабатываются как нулевые в серверной части.
 
-For bcrypt, passwords are automatically truncated to 72 characters, so as long as the first 72 characters match, the hashes will match.
+Иногда хэши определенных строк приводят к появлению этих специальных строк. Такие хэши называются `магическими хэшами`
 
-[Bcrypt example](https://3v4l.org/MsfS0)
-
-Descrypt have similar behavior to bcrypt, but passwords are instead truncated to 8 characters.
+Вот пример такого слабого сравнения для [sha256](https://3v4l.org/Lu7tm).
 
 - - -
 
-## Pre-hashed
+### Открытый текст
 
-<!--- Modified from https://github.com/spaze/hashes?tab%253Dreadme-ov-file#pbkdf2-hmac-sha1-pbkdf2-hmac-sha224-pbkdf2-hmac-sha256-->
+Plaintext.txt просто содержит несколько способов злоупотребления слабым сравнением в php
 
-These are a different kind of magic hashes, they don't need the loose comparison operator `==` and work even with strict comparison `===`.
+- - -
 
-If you use a password longer than 64 bytes and hash it with PBKDF2-HMAC-SHA1, it is first pre-hashed with SHA1.
+### Усеченный текст
 
-For example, `PBKDF2-HMAC-SHA1(password1) === PBKDF2-HMAC-SHA1(password2)` as `sha1(password1) === bin2hex(password2)`.
+В bcrypt пароли автоматически сокращаются до 72 символов, поэтому, если совпадают первые 72 символа, хэши будут совпадать.
 
-This behavior can also be seen in `PBKDF2-HMAC-SHA224` and `PBKDF2-HMAC-SHA256`.
+[Пример Bcrypt](https://3v4l.org/MsfS0)
+
+Функция Descrypt работает аналогично функции bcrypt, но вместо этого пароли усекаются до 8 символов.
+
+- - -
+
+## Предварительно хэшированный
+
+<!--- Изменено с https://github.com/spaze/hashes?tab%253Dreadme-ov-file#pbkdf2-hmac-sha1-pbkdf2-hmac-sha224-pbkdf2-hmac-sha256-->
+
+Это другой вид магических хэшей, они не нуждаются в свободном операторе сравнения "==" и работают даже при строгом сравнении "===".
+
+Если вы используете пароль длиной более 64 байт и хэшируете его с помощью PBKDF2-HMAC-SHA1, он сначала предварительно хэшируется с помощью SHA1.
+
+Например, `PBKDF2-HMAC-SHA1(пароль 1) === PBKDF2-HMAC-SHA1(пароль 2)` как `sha1(пароль 1) === bin2hex(пароль 2)`.
+
+Такое поведение также можно увидеть в `PBKDF2-HMAC-SHA224` и `PBKDF2-HMAC-SHA256`.
